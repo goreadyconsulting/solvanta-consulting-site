@@ -1,0 +1,334 @@
+/* Hallmark v2-inspired polish | Solvanta Consulting | brand: existing warm rust / editorial typography | signature: real before-and-after prompt example | preserved: static routing and course functionality */
+/* Critique: replace generic marketing cards with a practical learner-first preview and direct lesson navigation. No invented metrics or social proof. */
+:root {
+  --home-paper: #fffdfb;
+  --home-surface: #f6f0ea;
+  --home-surface-strong: #efe3d7;
+  --home-ink: #30251f;
+  --home-ink-soft: #60534b;
+  --home-accent: #89452d;
+  --home-accent-hover: #6f3421;
+  --home-line: #ded1c4;
+  --home-white: #ffffff;
+  --home-focus: #c4663e;
+  --home-on-accent: #fffdfb;
+  --home-shadow: 0 18px 44px rgba(48,37,31,.08);
+}
+html, body { overflow-x: clip; }
+body.solvanta-home,
+body.solvanta-courses {
+  background: var(--home-paper);
+  color: var(--home-ink);
+}
+.solvanta-home .site-header,
+.solvanta-courses .site-header {
+  background: var(--home-paper);
+}
+.solvanta-home main h1,
+.solvanta-home main h2,
+.solvanta-courses main h1,
+.solvanta-courses main h2 {
+  color: var(--home-ink);
+  overflow-wrap: break-word;
+  min-width: 0;
+  letter-spacing: -.045em;
+  line-height: 1.06;
+}
+.solvanta-home main p,
+.solvanta-courses main p {
+  color: var(--home-ink-soft);
+}
+.home-shell {
+  width: min(100% - 56px, 1160px);
+  margin-inline: auto;
+}
+.home-button {
+  display: inline-flex;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--home-accent);
+  border-radius: 4px;
+  padding: 12px 23px;
+  background: var(--home-accent);
+  color: var(--home-on-accent);
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 750;
+  line-height: 1.2;
+  transition: background .2s ease, color .2s ease, transform .2s ease;
+}
+.home-button:hover { background: var(--home-accent-hover); border-color: var(--home-accent-hover); transform: translateY(-2px); }
+.home-button-secondary {
+  background: transparent;
+  color: var(--home-ink);
+  border-color: var(--home-line);
+}
+.home-button-secondary:hover {
+  background: var(--home-surface);
+  color: var(--home-ink);
+  border-color: var(--home-accent);
+}
+.solvanta-home main a:focus-visible,
+.solvanta-home main summary:focus-visible,
+.solvanta-courses main a:focus-visible,
+.solvanta-courses main summary:focus-visible {
+  outline: 3px solid var(--home-focus);
+  outline-offset: 4px;
+  transition: none;
+}
+.home-hero {
+  border-bottom: 1px solid var(--home-line);
+  background: var(--home-paper);
+}
+.home-hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, .9fr);
+  gap: clamp(42px, 6vw, 88px);
+  align-items: center;
+  min-height: 598px;
+  padding-block: 76px 82px;
+}
+.home-hero-copy { min-width: 0; }
+.home-hero h1 {
+  max-width: 700px;
+  margin-bottom: 24px;
+  font-size: clamp(3.5rem, 5.9vw, 5.85rem);
+  font-weight: 500;
+}
+.home-hero-copy > p {
+  max-width: 440px;
+  font-size: clamp(1.06rem, 1.5vw, 1.2rem);
+  line-height: 1.7;
+}
+.home-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+.home-helper { margin-top: 17px; font-size: .88rem; }
+.home-example {
+  align-self: stretch;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(28px, 4vw, 46px);
+  background: var(--home-surface);
+  border: 1px solid var(--home-line);
+}
+.home-example h2 {
+  margin-bottom: 28px;
+  max-width: 375px;
+  font-family: var(--font-display);
+  font-size: clamp(1.65rem, 2.4vw, 2.45rem);
+  font-weight: 500;
+}
+.home-prompt {
+  padding: 17px 0 18px;
+  border-top: 1px solid var(--home-line);
+}
+.home-prompt p {
+  margin: 7px 0 0;
+  color: var(--home-ink) !important;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.home-prompt-label {
+  display: block;
+  color: var(--home-ink-soft);
+  font-family: var(--font-body);
+  font-size: .83rem;
+  font-weight: 650;
+}
+.home-prompt-improved p { font-weight: 650; }
+.home-prompt-note { border-top: 1px solid var(--home-line); padding-top: 14px; }
+.home-prompt-note summary {
+  color: var(--home-accent);
+  font-weight: 750;
+  cursor: pointer;
+  padding: 5px 0;
+}
+.home-prompt-note p { margin: 10px 0 0; font-size: .93rem; line-height: 1.6; }
+.home-proof {
+  border-bottom: 1px solid var(--home-line);
+  background: var(--home-paper);
+}
+.home-proof-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding-block: 29px;
+}
+.home-proof p { margin: 0; line-height: 1.5; font-size: .95rem; }
+.home-proof strong { color: var(--home-ink); font-weight: 750; }
+.home-proof a,
+.home-text-link {
+  color: var(--home-accent);
+  font-weight: 750;
+  text-underline-offset: 5px;
+}
+.home-path {
+  padding-block: 104px 114px;
+}
+.home-path-layout {
+  display: grid;
+  grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr);
+  gap: clamp(50px, 8vw, 115px);
+}
+.home-path-heading {
+  max-width: 390px;
+  align-self: start;
+  position: sticky;
+  top: 120px;
+}
+.home-path h2 {
+  margin-bottom: 18px;
+  font-size: clamp(2.65rem, 4.3vw, 4.4rem);
+  font-weight: 500;
+}
+.home-path-heading p { max-width: 340px; line-height: 1.75; }
+.home-lesson-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--home-line); }
+.home-lesson-list li { margin: 0; padding: 0; border-bottom: 1px solid var(--home-line); }
+.home-lesson {
+  display: grid;
+  grid-template-columns: 35px minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 18px;
+  padding: 25px 0;
+  color: var(--home-ink);
+  text-decoration: none;
+  transition: padding .2s ease, background .2s ease;
+}
+.home-lesson:hover { padding-inline: 10px; background: var(--home-surface); }
+.home-lesson-index { padding-top: 5px; color: var(--home-accent); font-size: .88rem; font-weight: 700; }
+.home-lesson strong {
+  display: block;
+  font-size: clamp(1.08rem, 1.8vw, 1.33rem);
+  font-weight: 750;
+  line-height: 1.3;
+}
+.home-lesson small { display: block; margin-top: 8px; color: var(--home-ink-soft); font-size: .92rem; line-height: 1.55; }
+.home-lesson-open { padding-top: 5px; color: var(--home-accent); font-size: .84rem; font-weight: 750; white-space: nowrap; }
+.home-note {
+  background: var(--home-ink);
+  padding: 80px 0;
+}
+.home-note-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr);
+  gap: clamp(36px, 7vw, 92px);
+  align-items: center;
+}
+.home-note h2 {
+  color: var(--home-on-accent) !important;
+  margin: 0;
+  max-width: 660px;
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 4.7vw, 4.7rem);
+  font-weight: 500;
+}
+.home-note p { color: var(--home-on-accent) !important; opacity: .88; line-height: 1.75; font-size: 1.05rem; }
+.home-note .home-button {
+  margin-top: 18px;
+  background: var(--home-on-accent);
+  color: var(--home-ink);
+  border-color: var(--home-on-accent);
+}
+.home-note .home-button:hover {
+  background: var(--home-surface-strong);
+  border-color: var(--home-surface-strong);
+}
+.home-coda {
+  padding: 72px 0 88px;
+  background: var(--home-surface);
+}
+.home-coda-inner { display: flex; align-items: center; justify-content: space-between; gap: 35px; }
+.home-coda h2 { margin: 0; font-size: clamp(2.1rem, 3.2vw, 3.2rem); }
+.home-coda p { margin: 10px 0 0; }
+.home-coda .home-button { white-space: nowrap; }
+/* Course catalogue */
+.catalog-hero {
+  padding: 96px 0 80px;
+  border-bottom: 1px solid var(--home-line);
+}
+.catalog-hero h1 {
+  max-width: 780px;
+  font-size: clamp(3.7rem, 7vw, 6.7rem);
+  margin-bottom: 22px;
+  font-weight: 500;
+}
+.catalog-hero p { max-width: 650px; font-size: 1.17rem; line-height: 1.75; }
+.catalog-feature { padding: 86px 0 68px; }
+.catalog-feature-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
+  gap: clamp(42px, 6vw, 80px);
+  align-items: end;
+}
+.catalog-feature h2 { max-width: 690px; font-size: clamp(2.6rem, 4.4vw, 4.45rem); font-weight: 500; }
+.catalog-feature p { max-width: 520px; font-size: 1.04rem; line-height: 1.75; }
+.catalog-meta {
+  display: flex;
+  gap: 10px 25px;
+  flex-wrap: wrap;
+  margin: 0 0 20px;
+  color: var(--home-ink-soft);
+  font-size: .9rem;
+}
+.catalog-meta span { display: inline-block; }
+.catalog-feature .home-actions { margin-top: 24px; }
+.catalog-modules { background: var(--home-surface); padding: 74px 0 98px; }
+.catalog-modules-intro { max-width: 740px; margin-bottom: 35px; }
+.catalog-modules h2 { font-size: clamp(2.4rem, 3.6vw, 3.5rem); font-weight: 500; margin-bottom: 12px; }
+.catalog-modules-intro p { line-height: 1.7; }
+.catalog-modules .home-lesson-list { border-color: var(--home-line); }
+.catalog-modules .home-lesson { padding: 22px 0; grid-template-columns: 45px minmax(0, 1fr) auto; }
+.catalog-modules .home-lesson:hover { background: var(--home-surface-strong); }
+.catalog-end { padding: 82px 0 94px; }
+.catalog-end-inner { display: flex; justify-content: space-between; gap: 35px; align-items: center; }
+.catalog-end h2 { max-width: 700px; margin: 0; font-size: clamp(2.25rem, 3.9vw, 3.75rem); font-weight: 500; }
+@media (max-width: 940px) {
+  .home-shell { width: min(100% - 42px, 1160px); }
+  .home-hero-inner { gap: 36px; min-height: auto; }
+  .home-hero h1 { font-size: clamp(3.2rem, 6.5vw, 5rem); }
+  .home-example { padding: 26px; }
+  .home-path-layout { gap: 40px; }
+}
+@media (max-width: 720px) {
+  .home-shell { width: min(100% - 36px, 1160px); }
+  .home-hero-inner,
+  .home-path-layout,
+  .home-note-layout,
+  .catalog-feature-inner { grid-template-columns: minmax(0, 1fr); }
+  .home-hero-inner { padding-block: 58px 66px; gap: 32px; }
+  .home-hero h1 { font-size: clamp(3.2rem, 10vw, 4.7rem); }
+  .home-example { padding: 25px; }
+  .home-example h2 { max-width: none; }
+  .home-proof-inner, .home-coda-inner, .catalog-end-inner { flex-direction: column; align-items: flex-start; }
+  .home-proof-inner { gap: 14px; padding-block: 24px; }
+  .home-path { padding-block: 72px 78px; }
+  .home-path-heading { position: static; }
+  .home-path h2 { font-size: clamp(2.6rem, 8vw, 3.6rem); }
+  .home-note { padding: 62px 0; }
+  .home-coda { padding: 62px 0; }
+  .catalog-hero { padding: 68px 0 58px; }
+  .catalog-feature { padding-block: 68px; }
+  .catalog-feature-inner { align-items: start; }
+  .catalog-modules { padding-block: 60px 78px; }
+  .catalog-end { padding-block: 68px; }
+}
+@media (max-width: 520px) {
+  .home-shell { width: min(100% - 28px, 1160px); }
+  .home-hero h1 { font-size: clamp(2.85rem, 11vw, 3.7rem); }
+  .home-actions { flex-direction: column; align-items: stretch; }
+  .home-button { width: 100%; text-align: center; }
+  .home-lesson, .catalog-modules .home-lesson { gap: 10px; grid-template-columns: 25px minmax(0, 1fr); }
+  .home-lesson-open { grid-column: 2; padding: 0; }
+  .catalog-hero h1 { font-size: clamp(3.25rem, 12vw, 5rem); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .solvanta-home main *,
+  .solvanta-courses main * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
