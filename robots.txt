@@ -1,1 +1,0 @@
-User-agent: *\nAllow: /\nSitemap: https://solvantaconsulting.com/sitemap.xml\n
