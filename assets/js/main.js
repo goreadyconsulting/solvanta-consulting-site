@@ -55,7 +55,7 @@ function initPrimaryNavigation() {
   const navMenus = document.querySelectorAll('[data-nav-menu]');
   const links = [
     { href: '/', label: 'Home' },
-    { href: '/courses/', label: 'Courses' },
+    { href: '/tools/', label: 'Free tools' },
     { href: '/about/', label: 'About' },
     { href: '/contact/', label: 'Contact' },
   ];
@@ -78,15 +78,15 @@ function initFooterNavigation() {
   footerLayout.innerHTML = `
     <div class='footer-brand'>
       <p class='footer-title'>Solvanta Consulting</p>
-      <p class='muted'>Free practical learning resources, with certificates only where they fit the course.</p>
+      <p class='muted'>Free tools for everyday tasks. No account required.</p>
     </div>
     <div>
       <h3>Site</h3>
       <nav class='footer-links' aria-label='Footer site links'>
-        <a data-footer-link href='/courses/'>Courses</a>
+        <a data-footer-link href='/tools/'>Free tools</a>
         <a data-footer-link href='/about/'>About</a>
         <a data-footer-link href='/contact/'>Contact</a>
-        <a data-footer-link href='/verify/'>Certificate lookup</a>
+        <a data-footer-link href='/verify/'>Existing certificate lookup</a>
       </nav>
     </div>
     <div>
